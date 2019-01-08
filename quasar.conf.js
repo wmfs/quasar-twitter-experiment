@@ -19,8 +19,9 @@ module.exports = function (ctx) {
     ],
     supportIE: false,
     build: {
+      publicPath: 'quasar-twitter-experiment',
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
