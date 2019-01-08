@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-ma-lg">
     <div>
-      <h2>Home</h2>
+      <h2>DEBUG</h2>
     </div>
   </q-page>
 </template>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'PageIndex',
+  name: 'PageTweetDebug',
   mounted: function () {
   }
 }

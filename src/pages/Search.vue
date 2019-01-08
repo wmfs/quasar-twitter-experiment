@@ -3,9 +3,9 @@
     <div>
       <h2>Search</h2>
     </div>
-    <p>
-      Results:
-    </p>
+    <q-input autofocus v-model="query" stack-label="Search"/>
+
+    <tweet-list :ids="tweetIds"></tweet-list>
 
 
   </q-page>
@@ -15,7 +15,19 @@
 </style>
 
 <script>
-export default {
-  name: 'PageIndex'
-}
+  import TweetList from '../components/Tweet-list'
+
+  export default {
+    name: 'PageIndex',
+    components: {TweetList},
+    data () {
+      return {
+        query: '',
+        tweetIds: ['1', '2']
+      }
+    },
+    mounted: function () {
+
+    }
+  }
 </script>
